@@ -1,0 +1,86 @@
+body {
+    background-color: #fff;
+}
+.note {
+    padding: 15px;
+    border-radius: 2px;
+    position: relative;
+    margin: 15px;
+    box-shadow: 2px 2px 2px 2px gray;
+    list-style: none;
+    display: inline-block;
+    input {
+        width: 100%;
+        background-color: transparent;
+    }
+}
+
+
+.title {
+    font-weight: bold;
+}
+
+.creator {
+    margin-bottom: 40px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+.selector {
+    min-width: 120px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    background-color: #efefef;
+    top: 2px;
+    left: 0;
+    display: inline-flex;
+    list-style: none;
+}
+
+.color {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-right: 10px;
+    opacity: 0.6;
+    &:hover {
+        opacity: 1;
+    }
+
+}
+
+
+.activeColor {
+    opacity: 1;
+    border: 2px solid black;
+}
+
+[name="todoItemName"], [name="todoItemDescription"] {
+    border: none;
+}
+
+.checked {
+    background-color:#f0f0f0;
+    color:#666;
+    &:hover, &:focus {
+        opacity: 0.6;
+    }
+}
+
+
+
+footer, footer p {
+    margin-bottom: 0 !important;
+}
+
+
+.nav-tabs {
+    margin-bottom: 20px !important;
+}
+
+
+
+.error {
+    color: #830454  !important;
+}

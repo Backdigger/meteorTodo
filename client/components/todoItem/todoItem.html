@@ -1,0 +1,27 @@
+
+<template name="todoItem">
+    <div class="col-sm-6 col-md-3">
+        <div class="creator" {{checked}} style="background-color: {{color}}">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" {{checked}}>
+                    <span class="checkbox-decorator">
+                        <span class="check"></span>
+                        <div class="ripple-container"></div></span>Done
+                </label>
+            </div>
+
+
+            <div class="form-group material-input-block">
+                <input type="text" placeholder="Title" value="{{name}}" name="todoItemName" class="form-control material-input">
+                <span class="material-input-block__line"></span>
+            </div>
+            <div class="form-group material-input-block">
+                <input type="text" placeholder="Description" value="{{description}}" name="todoItemDescription" class="form-control material-input">
+                <span class="material-input-block__line"></span>
+            </div>
+            <button type="button" class="btn btn-raised btn-danger delete-todo">Delete</button>
+        </div>
+    </div>
+
+</template>

@@ -1,0 +1,26 @@
+<template name="navigation">
+    <nav class="navbar material-navbar material-navbar_warning">
+        <div class="container">
+            <div class="navbar-header material-navbar__header">
+                <button class="navbar-toggle material-navbar__toogle collapsed" data-toggle="collapse" data-target="#navbar-navbar_warning">
+                    <span class="icon-bar material-navbar__icon-bar"></span>
+                    <span class="icon-bar material-navbar__icon-bar"></span>
+                    <span class="icon-bar material-navbar__icon-bar"></span>
+                </button>
+                <a class="navbar-brand material-navbar__brand" href="{{pathFor route='home'}}">Todos</a>
+            </div>
+            <div class="collapse navbar-collapse materil-navbar__collapse" id="navbar-navbar_warning">
+                <ul class="nav navbar-nav navbar-right material-navbar__nav">
+                    <li><a href="{{pathFor route='home'}}" class="material-navbar__link">Home</a></li>
+                    {{#if currentUser}}
+                        <li><a href="#" class="material-navbar__link logout">Logout</a></li>
+                    {{else}}
+                        <li><a href="{{pathFor route='register'}}" class="material-navbar__link">Register</a></li>
+                        <li><a href="{{pathFor route='login'}}" class="material-navbar__link">Login</a></li>
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</template>
